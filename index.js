@@ -15,4 +15,10 @@ document.getElementById("addButton").onclick= function(){
     const br=document.createElement("br")
     br.id="brLine"
     document.getElementById("taskList").appendChild(br)
+    checkbox = document.getElementById("doneBox")
+    checkbox.addEventListener("change", function(){
+    if (this.checked){
+        console.log("AAAAAAAAAAAAAAAAAA")
+    }
+    })
 }
