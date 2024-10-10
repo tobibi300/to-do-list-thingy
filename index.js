@@ -1,24 +1,25 @@
 let task
 let paragraph
 let checkbox
-document.getElementById("addButton").onclick= function(){
-    task=document.getElementById("taskBox").value
+let taskCounter = 0
+document.getElementById("addButton").onclick = () => {
+    task = document.getElementById("taskBox").value
     console.log(task)
-    paragraph=document.createElement("p")
-    paragraph.textContent=task
+    taskCounter++
+    paragraph = document.createElement("p")
+    paragraph.textContent = task
+    paragraph.id = "task_" + taskCounter
+    checkbox = document.createElement("input")
+    checkbox.type = "checkbox"
+    checkbox.id = "checkBox_" + taskCounter
     document.getElementById("taskList").appendChild(paragraph)
-    document.getElementById("taskBox").value = ''
-    checkbox=document.createElement("input") 
-    checkbox.type="checkbox"
-    checkbox.id="doneBox"
     document.getElementById("taskList").appendChild(checkbox)
-    const br=document.createElement("br")
-    br.id="brLine"
+    const br = document.createElement("br")
     document.getElementById("taskList").appendChild(br)
-    checkbox = document.getElementById("doneBox")
-    checkbox.addEventListener("change", function(){
-    if (this.checked){
-        console.log("AAAAAAAAAAAAAAAAAA")
-    }
+    document.getElementById("taskBox").value = ''
+    checkbox.addEventListener("change", function() {
+        if (this.checked) {
+            console.log("pogchamp")
+        }
     })
 }
