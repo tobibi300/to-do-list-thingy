@@ -19,7 +19,9 @@ document.getElementById("addButton").onclick = () => {
     document.getElementById("taskBox").value = ''
     checkbox.addEventListener("change", function() {
         if (this.checked) {
-            console.log("pogchamp")
+            console.log("pogchamp")       document.getElementById("taskList").appendChild(paragraph)
+document.getElementById("taskList").appendChild(checkbox)
+document.getElementById("taskList").appendChild(br)
         }
     })
 }
