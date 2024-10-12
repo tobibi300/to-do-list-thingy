@@ -22,11 +22,21 @@ document.getElementById("addButton").onclick = () => {
     checkbox.addEventListener("change", function(event) {
         if (event.target.checked) {
             console.log("pogchamp")
-            document.getElementById("doneList").appendChild(paragraph)
-            document.getElementById("doneList").appendChild(checkbox)
-            const br = document.createElement("br")
-            document.getElementById("doneList").appendChild(br)
-            document.getElementById("taskList").removeChild(br)
+            const index = checkboxes.indexOf(event.target)
+            document.getElementById("doneList").appendChild(paragraphs[index])
+            document.getElementById("doneList").appendChild(checkboxes[index])
+            const doneBr = document.createElement("br")
+            document.getElementById("doneList").appendChild(doneBr)
+
+        }
+        else {
+            console.log("unpogchamp D:")
+            const index = checkboxes.indexOf(event.target)
+            document.getElementById("taskList").appendChild(paragraphs[index])
+            document.getElementById("taskList").appendChild(checkboxes[index])
+            const doneBr = document.createElement("br")
+            document.getElementById("taskList").appendChild(doneBr)
+
         }
     })
 }
