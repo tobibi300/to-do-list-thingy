@@ -39,7 +39,14 @@ p {
     font-size: 25px;
     display: inline;
 }
-#doneBox {
+input {
     width: 25px;
     height: 25px;
+}
+#doneBox {
+    width: 25px;
+    height:25px;
+}
+#doneList {
+    color: rgb(206, 201, 195);
 }
