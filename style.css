@@ -4,7 +4,7 @@ body {
     font-family: 'Georgia', serif;
 }
 
-button {
+#addButton {
     width: 100px;
     height: 50px;
     font-size: 1.2rem;
@@ -18,13 +18,34 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+#addButton:active {
+    background-color: #dcd7d7;
+    box-shadow: inset 0 0 10px rgba(73, 71, 71, 0.5);
+}
+
+#adButton:hover {
+    background-color: #e0d8d8;
+}
+
 button:active {
     background-color: #dcd7d7;
     box-shadow: inset 0 0 10px rgba(73, 71, 71, 0.5);
 }
 
 button:hover {
-    background-color: #f0f0f0;
+    background-color: #e0d8d8;
+}
+
+button{
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif;
+    background-color: rgb(251, 245, 238);
+    color: rgb(41, 38, 38);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #taskBox {
@@ -49,4 +70,5 @@ input {
 }
 #doneList {
     color: rgb(206, 201, 195);
+    font-style: italic;
 }
