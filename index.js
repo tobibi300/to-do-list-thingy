@@ -6,9 +6,11 @@ let taskCounter = 0
 
 document.getElementById("addButton").onclick = () => {
     task = document.getElementById("taskBox").value
-    console.log(task)
-    taskCounter++
-
+    if (task == ""){
+        console.log("( ͡° ͜ʖ ͡°)")
+    }
+    else{
+        taskCounter++
     const paragraph = document.createElement("p")
     paragraph.textContent = task
     paragraph.id = "task_" + taskCounter
@@ -67,4 +69,5 @@ document.getElementById("addButton").onclick = () => {
         checkboxes.splice(stevedex, 1);
         stevens.splice(stevedex, 1);
     }
+}
 }
