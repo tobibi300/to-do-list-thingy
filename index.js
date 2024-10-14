@@ -2,6 +2,7 @@ let task
 let paragraphs = []
 let checkboxes = []
 let stevens = []
+let edits = []
 let taskCounter = 0
 
 document.getElementById("addButton").onclick = () => {
