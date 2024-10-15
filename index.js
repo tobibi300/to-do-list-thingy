@@ -1,7 +1,7 @@
 let task
 let paragraphs = []
 let checkboxes = []
-let stevens = []
+let stevens = [] //delete button
 let edits = []
 let taskCounter = 0
 
